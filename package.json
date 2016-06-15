@@ -1,0 +1,25 @@
+{
+  "name": "courtesy",
+  "version": "0.1.0",
+  "description": "A simple, modular and elegant CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/have-courtesy/courtesy.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "sass",
+    "flexbox"
+  ],
+  "author": "Mateus Pinheiro <mateus.pinheiro@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/have-courtesy/courtesy/issues"
+  },
+  "homepage": "https://github.com/have-courtesy/courtesy#readme"
+}
