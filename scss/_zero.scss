@@ -1,0 +1,41 @@
+// Reset border-box
+// Credit: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+@at-root {
+	@-moz-viewport      { width: device-width; }
+	@-ms-viewport       { width: device-width; }
+	@-o-viewport        { width: device-width; }
+	@-webkit-viewport   { width: device-width; }
+	@viewport           { width: device-width; }
+}
+
+html {
+	// Sets a specific default `font-size` for user with `rem` type scales.
+	font-size: 14px;
+	// Changes the default tap highlight to be completely transparent in iOS.
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+// Suppress the focus outline on elements that cannot be accessed via keyboard.
+// Credit: https://github.com/suitcss/base
+[tabindex="-1"]:focus { outline: none !important; }
+
+// Reset margins for main text elements
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+// iOS "clickable elements" fix for role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+[role="button"] { cursor: pointer; }
+
+// Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
+// * http://caniuse.com/#feat=css-touch-action
+// * http://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
+a, area, button, [role="button"], input, label,
+select, summary, textarea {
+	touch-action: manipulation;
+}
+
+// Always hide an element with the `hidden` HTML attribute (from PureCSS).
+[hidden] { display: none !important; }
