@@ -1,0 +1,38 @@
+blockquote { margin: 0; }
+
+
+//
+// Links
+//
+
+a {
+	color: $link-color;
+	text-decoration: $link-decoration;
+
+	@include hover-focus {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+
+	&:focus {
+		@include tab-focus();
+	}
+}
+
+
+//
+// Code
+//
+
+pre {
+	// Remove browser default top margin
+	margin-top: 0;
+	// Reset browser default of `1em` to use `rem`s
+	margin-bottom: 1rem;
+}
+
+address {
+	margin-bottom: 1rem;
+	font-style: normal;
+	line-height: inherit;
+}

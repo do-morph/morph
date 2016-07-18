@@ -49,7 +49,7 @@
  * There's usage of pseudo classes to remove leading and trailling
  * paddings.
  */
-$col-padding: .5rem;
+$col-padding: 1rem;
 .col {
 	flex-grow: 0 0 auto;
 	padding: 0 $col-padding;
