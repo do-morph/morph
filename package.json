@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/have-courtesy/courtesy/issues"
   },
-  "homepage": "https://github.com/have-courtesy/courtesy#readme"
+  "homepage": "https://github.com/have-courtesy/courtesy#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "postcss-import": "^8.1.2"
+  }
 }
