@@ -1,6 +1,6 @@
 {
   "name": "courtesy",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A simple, modular and elegant CSS framework",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "css",
     "framework",
-    "sass",
+    "postcss",
     "flexbox"
   ],
   "author": "Mateus Pinheiro <mateus.pinheiro@gmail.com>",
