@@ -1,8 +1,5 @@
-.autoprefixertest {
-	display: flex;
-}
+@import './../shared/variables.css';
 
-.cssnext {
-	background: color(red alpha(-10%));
+div {
+  color: var(--color-primary);
 }
-
