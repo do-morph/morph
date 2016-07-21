@@ -4,8 +4,9 @@ var autoprefixer     = require('autoprefixer');
 var cssnext          = require('cssnext');
 var postcssImport    = require('postcss-import');
 var customProperties = require('postcss-custom-properties');
+var minify           = require('postcss-csso');
 
-gulp.task('default', function() {
+gulp.task('default', ['css'], function() {
 	gulp.watch('./modules/**/*.css', ['css']);
 });
 
@@ -14,7 +15,8 @@ gulp.task('css', function() {
 		postcssImport,
 		autoprefixer,
 		customProperties,
-		cssnext
+		cssnext,
+		minify
 	];
 
 	return gulp.src('./modules/**/*.css')
