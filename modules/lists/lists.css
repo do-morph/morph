@@ -1,0 +1,14 @@
+/**
+ * LISTS
+ * Styles to tame lists
+ *
+ * Estimated compiled size: 44B
+ */
+
+/**
+ * Reset list styling
+ */
+.list--clear {
+	list-style: none;
+	padding-left: 0;
+}
