@@ -19,7 +19,7 @@ gulp.task('css', function() {
 		minify
 	];
 
-	return gulp.src('./modules/**/*.css')
+	return gulp.src('./modules/courtesy.css')
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./build/'));
 });
