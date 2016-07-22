@@ -23,3 +23,17 @@ gulp.task('css', function() {
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./build/'));
 });
+
+gulp.task('css-modules', function() {
+	var processors = [
+		postcssImport,
+		autoprefixer,
+		customProperties,
+		cssnext,
+		minify
+	];
+
+	return gulp.src('./modules/**/*.css')
+		.pipe(postcss(processors))
+		.pipe(gulp.dest('./build/'));
+});
