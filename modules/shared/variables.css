@@ -1,4 +1,7 @@
 :root {
 	/* Color pallete */
 	--color-primary: #2abbf1;
+
+	/* Typography */
+	--line-height: 1.3;
 }

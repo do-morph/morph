@@ -13,6 +13,8 @@
  * Estimated compiled size: 476B
  */
 
+@import './../shared/variables.css';
+
 :root {
 	/* Typographic scale */
 	--h1: 2.4rem;
@@ -28,7 +30,6 @@
 	 * font size.
 	 */
 	--margin: 1em;
-	--line-height: 1.3;
 }
 
 
