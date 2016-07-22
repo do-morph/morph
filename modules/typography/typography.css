@@ -33,9 +33,13 @@
 
 
 /**
- * Base font size at 16px
+ * Base font size at 16px and main font family
  */
-html { font-size: 16px; }
+html { 
+	font-size: 16px;
+	/* TODO Optmizie this font stack for windows */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 
 /**

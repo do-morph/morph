@@ -1,0 +1,36 @@
+/**
+ * BUTTONS
+ * Simple styles to make buttons look nice. Remember, this is not
+ * Bootstrap! Bootstrap already does the full styling and stuff, and is 
+ * very good at this. Courtesy should only give basic styling and leave
+ * the rest to whoever is using it.
+ *
+ * Estimated compiled size: 367B
+ * 
+ */
+
+@import './../shared/variables.css';
+
+.btn {
+	/* TODO Optimize the font for windows */
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+    padding: .875em 1em;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    background-color: var(--color-primary);
+}
+
+.btn--block { 
+	display: block;
+	width: 100%; 
+}
+
+.btn--big { font-size: 1.2rem; }
+.btn--small { font-size: .875rem; }
+
+/* TODO Do hover styles */
