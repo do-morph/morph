@@ -1,0 +1,88 @@
+/**
+ * GRID
+ */
+
+:root {
+	--col-padding: 1em;
+}
+
+
+/**
+ * Grid rows
+ */
+.row {
+	display: flex;
+}
+
+
+/**
+ * Grid columns
+ */
+.row > [class^=col-] {
+	flex: 0 0 auto;
+	padding-left:  var(--col-padding);
+	padding-right: var(--col-padding);
+}
+
+.push-s-0, .push-m-0, .push-l-0, 
+.push-x-0, .push-xx-0 { 
+	margin-left: 0; 
+}
+
+.col-s-hide, .col-m-hide, .col-l-hide, 
+.col-x-hide, .col-xx-hide { 
+	display: none; 
+}
+
+@for $i from 1 to 12 {
+	.col-s-$i {
+		flex-basis: calc(100%/(12/$i));
+		max-width:  calc(100%/(12/$i));
+	}
+
+	.push-s-$i { margin-left: calc(100%/(12/$i)); }
+}
+
+@media (min-width: 544px) {
+	@for $i from 1 to 12 {
+		.col-m-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-m-$i { margin-left: calc(100%/(12/$i)); }
+	}	
+}
+
+@media (min-width: 768px) {
+	@for $i from 1 to 12 {
+		.col-l-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-l-$i { margin-left: calc(100%/(12/$i)); }
+	}	
+}
+
+@media (min-width: 992px) {
+	@for $i from 1 to 12 {
+		.col-x-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-x-$i { margin-left: calc(100%/(12/$i)); }
+	}	
+}
+
+@media (min-width: 1200px) {
+	@for $i from 1 to 12 {
+		.col-xx-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-xx-$i { margin-left: calc(100%/(12/$i)); }
+	}	
+}

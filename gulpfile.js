@@ -5,6 +5,8 @@ var cssnext          = require('cssnext');
 var postcssImport    = require('postcss-import');
 var customProperties = require('postcss-custom-properties');
 var minify           = require('postcss-csso');
+var postcssFor       = require('postcss-for');
+var postcssCalc      = require('postcss-calc');
 
 gulp.task('default', ['css'], function() {
 	gulp.watch('./modules/**/*.css', ['css']);
@@ -15,6 +17,8 @@ gulp.task('css', function() {
 		postcssImport,
 		autoprefixer,
 		customProperties,
+		postcssFor,
+		postcssCalc,
 		cssnext,
 		minify
 	];
@@ -29,8 +33,10 @@ gulp.task('css-modules', function() {
 		postcssImport,
 		autoprefixer,
 		customProperties,
-		cssnext,
-		minify
+		postcssFor,
+		postcssCalc,
+		cssnext
+	//	minify
 	];
 
 	return gulp.src('./modules/**/*.css')
