@@ -1,1 +1,12 @@
-@import './../../node_modules/normalize.css/normalize.css'
+@import './../../node_modules/normalize.css/normalize.css';
+
+
+/**
+ * Sets everything to border-box.
+ *
+ * Technique from 
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
