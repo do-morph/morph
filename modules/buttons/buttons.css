@@ -1,12 +1,10 @@
 /**
  * BUTTONS
- * Simple styles to make buttons look nice. Remember, this is not
- * Bootstrap! Bootstrap already does the full styling and stuff, and is 
- * very good at this. Courtesy should only give basic styling and leave
- * the rest to whoever is using it.
+ * Simple styles to make buttons look nice. Morph provides only one
+ * button style, anything else is up to who is using it.
  *
- * Estimated compiled size: 367B
- * 
+ * Minified: 462B
+ * Gzipped:  273B
  */
 
 @import './../shared/variables.css';
@@ -15,28 +13,28 @@
  * Standard button style
  */
 .btn {
-	/* TODO Optimize the font for windows */
 	display: inline-block;
+    padding: .75em 1em;
+
 	text-align: center;
 	white-space: nowrap;
-	cursor: pointer;
-	user-select: none;
-    padding: .75em 1em;
-    border-radius: .25rem;
-    border: 1px solid transparent;
     font-weight: 500;
     line-height: var(--line-height);
-    background-color: var(--color-primary);
-}
 
+    background-color: var(--color-primary);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+	cursor: pointer;
+	user-select: none;
+}
 
 /**
  * Button size variations. Change just the font size and
  * padding with ems should do the rest.
  */
-.btn--big { font-size: 1.2rem; }
+.btn--big   { font-size: 1.2rem; }
 .btn--small { font-size: .875rem; }
-
 
 /**
  * Block, 100% width button
@@ -46,7 +44,6 @@
 	width: 100%; 
 }
 
-
 /**
  * Button that looks like a link
  */
@@ -55,5 +52,3 @@
 	color: var(--color-primary);
 	text-decoration: underline;
 }
-
-/* TODO Do hover styles */
