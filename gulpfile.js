@@ -9,10 +9,10 @@ var postcssFor       = require('postcss-for');
 var postcssCalc      = require('postcss-calc');
 
 gulp.task('default', ['css'], function() {
-	gulp.watch('./modules/**/*.css', ['css']);
+	gulp.watch('./modules/**/*.css', ['build']);
 });
 
-gulp.task('css', function() {
+gulp.task('build', function() {
 	var processors = [
 		postcssImport,
 		autoprefixer,
@@ -23,9 +23,9 @@ gulp.task('css', function() {
 		minify
 	];
 
-	return gulp.src('./modules/courtesy.css')
+	return gulp.src('./modules/morph.css')
 		.pipe(postcss(processors))
-		.pipe(gulp.dest('./build/'));
+		.pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('css-modules', function() {
@@ -41,5 +41,5 @@ gulp.task('css-modules', function() {
 
 	return gulp.src('./modules/**/*.css')
 		.pipe(postcss(processors))
-		.pipe(gulp.dest('./build/'));
+		.pipe(gulp.dest('./temp-build/'));
 });
