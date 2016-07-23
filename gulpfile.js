@@ -28,15 +28,15 @@ gulp.task('build', function() {
 		.pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('css-modules', function() {
+gulp.task('build-debug', function() {
 	var processors = [
 		postcssImport,
 		autoprefixer,
 		customProperties,
 		postcssFor,
 		postcssCalc,
-		cssnext
-	//	minify
+		cssnext,
+		minify
 	];
 
 	return gulp.src('./modules/**/*.css')
