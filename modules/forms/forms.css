@@ -1,12 +1,14 @@
 /**
  * FORMS
+ * Style the main input fields. Make them blocks
  *
  * Estimated compiled size: 342B
  */
 
 @import './../shared/variables.css';
 
-input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="file"]), select {
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="file"]), 
+select {
 	display: block;
 	width: 100%;
 	line-height: var(--line-height);
