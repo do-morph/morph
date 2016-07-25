@@ -1,3 +1,9 @@
+/**
+ * VARIABLES
+ * Variables shared across 2 or more module.
+ * If a variable only concerns 1 module, it should be kept inside it.
+ */
+
 :root {
 	/* Color pallete */
 	--color-primary: #2abbf1;
