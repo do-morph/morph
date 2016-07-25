@@ -18,7 +18,10 @@
  * The rows are simply flex containers. They are wrapping so that
  * rows with more than 12 cols don't break.
  */
-.row { display: flex; }
+.row { 
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 
