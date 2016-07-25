@@ -10,7 +10,7 @@
  * guidelines. You can check at
  * https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation
  *
- * Estimated compiled size: 476B
+ * Estimated compiled size: 565B
  */
 
 @import './../shared/variables.css';
@@ -33,18 +33,30 @@
 }
 
 
+
+
+
 /**
- * Base font size at 16px and main font family
+ * #BASE FONT SIZE
+ * Make all elements inherit the font size and family from the root
+ * HTML element.
  */
 html { 
 	font-size: 16px;
-	/* TODO Optmizie this font stack for windows */
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
+
+
+
 /**
- * Headings
+ * #HEADINGS
+ * Style all the headings. They also have classes that can help
+ * change the sytling while keeping the elements semantic.
+ *
+ * You should be able to do <h1 class="h2">Something</h1> The styling
+ * is right, and also the semantic order.
  */
 h1, .h1 { font-size: var(--h1); }
 h2, .h2 { font-size: var(--h2); }
@@ -65,8 +77,15 @@ h6, .h6 {
 }
 
 
+
+
+
 /**
- * Body elements
+ * #TEXT ELEMENTS
+ * Main text elements. Just make sure they have the right settings and
+ * make it possible to keep it sematic and styled.
+ *
+ * You can have a <p class="bold">something</p>
  */
 p, span, div, blockquote { line-height: var(--line-height); }
 
@@ -76,10 +95,12 @@ i, .italic { font-style: italic; }
 small { font-size: .875rem; }
 
 
+
+
+
 /**
  * Styling elements
  */
-/* TODO change the colors to the color pallete */
 hr {
 	margin-top: var(--margin);
 	margin-bottom: var(--margin);
@@ -87,4 +108,8 @@ hr {
 	border-top: 1px solid black;
 }
 
-hr.hr--big { border-top: .25rem solid black; }
+hr.hr--big { 
+	margin-top:    calc(var(--margin) * 2);
+	margin-bottom: calc(var(--margin) * 2);
+	border-top: .25rem solid black; 
+}
