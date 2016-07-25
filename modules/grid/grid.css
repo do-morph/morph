@@ -57,15 +57,19 @@
 }
 
 
-.row > [class^=col-] {
+[class^=col-] {
 	padding-left:  var(--col-padding);
 	padding-right: var(--col-padding);
 }
 
-.row > [class^=col-]:first-child { padding-left:  0; }
-.row > [class^=col-]:last-child  { padding-right: 0; }
+[class^=col-]:first-child { padding-left:  0; }
+[class^=col-]:last-child  { padding-right: 0; }
 
 
+/**
+ * SMALL GRID 
+ * 0 to 543px
+ */
 @for $i from 1 to 12 {
 	.col-s-$i {
 		flex-basis: calc(100%/(12/$i));
@@ -75,7 +79,13 @@
 	.push-s-$i { margin-left: calc(100%/(12/$i)); }
 }
 
+.col-s-12 { padding-left: 0; padding-right: 0; }
 
+
+/**
+ * MEDIUM GRID
+ * 544px to 767px
+ */
 @media (min-width: 544px) {
 	@for $i from 1 to 12 {
 		.col-m-$i {
@@ -87,6 +97,11 @@
 	}	
 }
 
+
+/**
+ * LARGE GRID
+ * 768px to 991px
+ */
 @media (min-width: 768px) {
 	@for $i from 1 to 12 {
 		.col-l-$i {
@@ -98,6 +113,11 @@
 	}	
 }
 
+
+/**
+ * EXTRA LARGE GRID
+ * 992px to 1199px
+ */
 @media (min-width: 992px) {
 	@for $i from 1 to 12 {
 		.col-x-$i {
@@ -109,6 +129,11 @@
 	}	
 }
 
+
+/**
+ * EXTRA EXTRA LARGE GRID
+ * 1200px and up
+ */
 @media (min-width: 1200px) {
 	@for $i from 1 to 12 {
 		.col-xx-$i {
