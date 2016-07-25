@@ -2,7 +2,7 @@
  * GRID
  * A simple flexbox grid implementation, as barebones as possible.
  *
- * Estimated compiled size: 6.7k
+ * Estimated compiled size: 6.8k
  */
 
 :root {
@@ -48,10 +48,12 @@
 
 
 .row > [class^=col-] {
-	flex: 0 0 auto;
 	padding-left:  var(--col-padding);
 	padding-right: var(--col-padding);
 }
+
+.row > [class^=col-]:first-child { padding-left:  0; }
+.row > [class^=col-]:last-child  { padding-right: 0; }
 
 @for $i from 1 to 12 {
 	.col-s-$i {
