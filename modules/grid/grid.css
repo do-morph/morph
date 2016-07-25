@@ -1,5 +1,8 @@
 /**
  * GRID
+ * A simple flexbox grid implementation, as barebones as possible.
+ *
+ * Estimated compiled size: 1.7k
  */
 
 :root {
@@ -7,23 +10,32 @@
 }
 
 
-/**
- * Grid rows
- */
-.row {
-	display: flex;
-}
+
 
 
 /**
- * Grid columns
+ * #GRID ROWS
+ * The rows are simply flex containers. They are wrapping so that
+ * rows with more than 12 cols don't break.
  */
-.row > [class^=col-] {
-	flex: 0 0 auto;
-	padding-left:  var(--col-padding);
-	padding-right: var(--col-padding);
-}
+.row { display: flex; }
 
+
+
+
+
+/**
+ * #GRID COLUMNS
+ * The columns are flex items with fixed max-width and flex-basis. 
+ * There's also pushes and hides for each breakpoint.
+ *
+ * There are three breakpoints:
+ * 1) 0px    - col-s-n
+ * 2) 544px  – col-m-n
+ * 3) 768px  – col-l-n
+ * 4) 992px  - col-x-n
+ * 5) 1200px - col-xx-n
+ */
 .push-s-0, .push-m-0, .push-l-0, 
 .push-x-0, .push-xx-0 { 
 	margin-left: 0; 
@@ -32,6 +44,13 @@
 .col-s-hide, .col-m-hide, .col-l-hide, 
 .col-x-hide, .col-xx-hide { 
 	display: none; 
+}
+
+
+.row > [class^=col-] {
+	flex: 0 0 auto;
+	padding-left:  var(--col-padding);
+	padding-right: var(--col-padding);
 }
 
 @for $i from 1 to 12 {
