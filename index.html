@@ -3,126 +3,167 @@
 <head>
 	<meta charset="utf-8">
 	<title>Have some Courtesy</title>
-	<link rel="stylesheet" href="build/courtesy.css">
+	<link rel="stylesheet" href="dist/morph.css">
+	<link rel="stylesheet" href="assets/paintcoat.css">
 </head>
 
-<body id="home">
+<body class="main-container">
+
+
+	<header role="heading" class="row row--al-bottom">
+		<div class="col-s-12 push-s-0   col-m-3 push-m-2">
+			<img src="assets/morph-logo.svg" width="135" height="140">
+		</div>
+
+		<p class="col-s-12 push-s-0   col-m-5 push-m-1   col-l-5 push-l-0">
+			Morph is a simple CSS framework shapes itself to your 
+			project. It is designed to be small and work for you, not
+			the other way around.
+		</p>
+	</header>
+
+	<nav class="nav" role="navigation">
+		<ul class="list--clear nav__list">
+			<li class="nav__list__item"><a href="#">Principles</a></li>
+			<li class="nav__list__item"><a href="#">Get started</a></li>
+			<li class="nav__list__item"><a href="#">Reset</a></li>
+			<li class="nav__list__item"><a href="#">Typography</a></li>
+			<li class="nav__list__item"><a href="#">Lists</a></li>
+			<li class="nav__list__item"><a href="#">Buttons</a></li>
+			<li class="nav__list__item"><a href="#">Form</a></li>
+			<li class="nav__list__item"><a href="#">Grid</a></li>
+		</ul>
+	</nav>
+
+	<hr class="hr--big">
+
+
+
+
 
 	<h1>Typography</h1>
+	<p>Change the base font size, add basic styling for headings and
+	main text elements. Also sets a main font-family.</p>
 
-	<h1>H1 heading example</h1>
-	<h2>H2 heading example</h2>
-	<h3>H3 heading example</h3>
-	<h4>H4 heading example</h4>
-	<h5>H5 heading example</h5>
-	<h6>H6 heading example</h6>
+	<div class="demo">
+		<h2 class="demo__title">Headings</h2>
 
-	<p>Paragraph example Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-	<p>Paragraph example Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+		<h1>This is an h1</h1>
+		<h2>This is an h2</h2>
+		<h3>This is an h3</h3>
+		<h4>This is an h4</h4>
+		<h5>This is an h5</h5>
+		<h6>This is an h6</h6>
+	</div>
 
-	<small>Small text test</small>
+	<div class="demo">
+		<h2 class="demo__title">Text elements</h2>
 
-	<mark>Teste de mark</mark>
+		<p>This is a long paragraph. Morbi leo risus, porta ac 
+		consectetur ac, vestibulum at eros. Lorem ipsum dolor sit 
+		amet, consectetur adipiscing elit. Morbi leo risus, porta ac 
+		consectetur ac, vestibulum at eros.</p>
 
-	<blockquote>Teste de blockquote Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</blockquote>
+		<p><small>This is a small text elemnt</small></p>
+
+		<p><mark>This is a mark</mark></p>
+
+		<div><blockquote>This is a blockquote. A wizard is never late, nor is he early, he arrives precisely when he means to.</blockquote></div>
+	</div>
+
+	<hr class="hr--big">
 
 
-	<hr>
+
 
 
 	<h1>Lists</h1>
+	<p>A simple reset to remove any styling from the list.</p>
 
-	<ul>
-		<li>Test number one</li>
-		<li>Test number two</li>
-		<li>Test number three</li>
-		<li>Test number four</li>
-	</ul>
+	<div class="demo">
+		<h2 class="demo__title">Lists</h2>
 
-	<ol>
-		<li>Test number one</li>
-		<li>Test number two</li>
-		<li>Test number three</li>
-		<li>Test number four</li>
-	</ol>
+		<ul>
+			<li>Item number one</li>
+			<li>Item number two</li>
+			<li>Item number three</li>
+		</ul>
 
-	<dl>
-		<dt>Something here</dt>
-		<dd>And its definition type</dd>
-		<dt>Something here</dt>
-		<dd>And its definition type</dd>
-	</dl>
+		<ul class="list--clear">
+			<li>Item number one</li>
+			<li>Item number two</li>
+			<li>Item number three</li>
+		</ul>
+	</div>
 
-	<ul class="list--clear">
-		<li>Test number one</li>
-		<li>Test number two</li>
-		<li>Test number three</li>
-		<li>Test number four</li>
-	</ul>
+	<hr class="hr--big">
 
-	<hr>
+
+
 
 	<h1>Buttons</h1>
+	<p>A simple button, to help you get started. Just one simple
+	version.</p>
 
-	<button class="btn">Button</button>
-	<button class="btn btn--big">Big button</button>
-	<button class="btn btn--small">Small button</button>
-	<button class="btn btn--link">Link button</button>
+	<div class="demo">
+		<h2 class="demo__title">Buttons</h2>
 
-	<button class="btn btn--block">Block button</button>
+		<p><button class="btn">Button</button></p>
+		<p><button class="btn btn--big">Big button</button></p>
+		<p><button class="btn btn--small">Small button</button></p>
+		<p><button class="btn btn--link">Link button</button></p>
+	</div>
+
+	<hr class="hr--big">
+
+
+
+
 
 	<h1>Form</h1>
+	<p>Basic styling for all form elements.</p>
 
+	<div class="demo">
+		<h2 class="demo__title">Form inputs</h2>
 
-	<div><input type="button" class="btn" value="Button input"></div>
-	<div><input type="reset" class="btn" value="Button input"></div>
-	<div><input type="submit" class="btn" value="Button input"></div>
+		<p>
+			<input type="checkbox" id="cb1" value="one">
+			<label for="cb1">Checkbox</label>
+		</p>
 
+		<p>
+			<input type="radio" name="radio" id="rd1" value="one">
+			<label for="rd1">Radio</label>
+		</p>
 
-	<div>
-		<input type="checkbox" id="cb1" value="one">
-		<label for="cb1">Option one</label>
+		<p><input type="date"></p>
+		<p><input type="datetime"></p>
+		<p><input type="datetime-local"></p>
+		<p><input type="time"></p>
+		<p><input type="week"></p>
+		<p><input type="month"></p>
 
-		<input type="checkbox" id="cb2" value="two">
-		<label for="cb2">Option two</label>
+		<p><input type="text"></p>
+		<p><input type="email"></p>
+		<p><input type="password"></p>
+		<p><input type="number"></p>
+		<p><input type="range"></p>
+		<p><input type="search"></p>
+		<p><input type="tel"></p>
+		<p><input type="url"></p>
+		<p><input type="color"></p>
+
+		<p>
+			<select>
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="mercedes">Mercedes</option>
+				<option value="audi">Audi</option>
+			</select>
+		</p>
+
+		<p><input type="file"></p>
 	</div>
-
-	<div>
-		<input type="radio" name="radio" id="rd1" value="one">
-		<label for="rd1">Radio option one</label>
-
-		<input type="radio" name="radio" id="rd2" value="two">
-		<label for="rd2">Radio option two</label>
-	</div>
-
-	<div><input type="date"></div>
-	<div><input type="datetime"></div>
-	<div><input type="datetime-local"></div>
-	<div><input type="time"></div>
-	<div><input type="week"></div>
-	<div><input type="month"></div>
-
-	<div><input type="text"></div>
-	<div><input type="email"></div>
-	<div><input type="password"></div>
-	<div><input type="number"></div>
-	<div><input type="range"></div>
-	<div><input type="search"></div>
-	<div><input type="tel"></div>
-	<div><input type="url"></div>
-	<div><input type="color"></div>
-
-	<div>
-		<select>
-			<option value="volvo">Volvo</option>
-			<option value="saab">Saab</option>
-			<option value="mercedes">Mercedes</option>
-			<option value="audi">Audi</option>
-		</select>
-	</div>
-
-	<div><input type="file"></div>
-	<br><br><br><br><br><br><br><br><br><br>
 
 </body>
 </html>
