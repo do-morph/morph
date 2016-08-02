@@ -34,11 +34,27 @@ h1, h2, h3, h4, h5, h6,
  * Define a container to organise the content
  */
 .main-container {
-	max-width: 920px;
+	max-width: 768px;
 	padding: 2rem 1rem;
 	margin: 0 auto;
 }
 
+
+
+
+
+/**
+ * #HEADER
+ * Main header
+ */
+.header {
+	background: #3f4d52;
+	color: #dce5e8;
+}
+
+.header .main-container {
+	padding-bottom: 0;
+}
 
 
 
@@ -59,8 +75,10 @@ h1, h2, h3, h4, h5, h6,
 	flex-wrap: wrap;
 }
 
-.nav__list__item {
-	padding: 1rem;	
+.nav__list__item a {
+	display: block;
+	color: #dce5e8;
+	padding: 1rem;
 }
 
 
