@@ -21,7 +21,6 @@
     font-weight: 500;
     line-height: var(--line-height);
 
-    background-color: var(--color-primary);
     border: 1px solid transparent;
     border-radius: .25rem;
 
@@ -49,6 +48,5 @@
  */
 .btn--link {
 	background-color: transparent;
-	color: var(--color-primary);
 	text-decoration: underline;
 }
