@@ -8,7 +8,18 @@
 
 @import './../shared/variables.css';
 
-input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="file"]), 
+input[type~="date"], /*date and date, and datetime-local*/
+input[type="time"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
 select {
 	display: block;
 	width: 100%;
