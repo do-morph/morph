@@ -1,0 +1,37 @@
+/**
+ * BUTTONS
+ * Simple styles to make buttons look nice. Morph provides only one
+ * button style, anything else is up to who is using it.
+ *
+ * Minified: 300B
+ * Gzipped:  204B
+ */
+
+@import './../shared/variables.css';
+
+/**
+ * Standard button style
+ */
+.btn {
+	display: inline-block;
+    padding: .75em 1em;
+
+	text-align: center;
+	white-space: nowrap;
+    font-weight: 500;
+    line-height: var(--line-height);
+
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+	cursor: pointer;
+	user-select: none;
+}
+
+/**
+ * Block, 100% width button
+ */
+.btn--block { 
+	display: block;
+	width: 100%; 
+}

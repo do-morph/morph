@@ -1,0 +1,126 @@
+/**
+ * #VARIABLES
+ * Main paintcoat variables
+ *
+ * light-grey:   #f1f1f1;
+ * dark-bg:      #3f4d52;
+ * dark-bg-text: #dce5e8;
+ */
+
+
+
+
+
+
+
+/**
+ * #TYPOGRAPHIC STYLE
+ * Sets the main heading font and some type styles.
+ */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+
+
+
+
+/**
+ * #MAIN CONTAINER
+ * Define a container to organise the content
+ */
+.main-container {
+	max-width: 768px;
+	padding: 2rem 1rem;
+	margin: 0 auto;
+}
+
+
+
+
+
+/**
+ * #HEADER
+ * Main header
+ */
+.header {
+	background: #3f4d52;
+	color: #dce5e8;
+}
+
+
+
+
+/**
+ * #NAVIGATION
+ * Main content navigation
+ */
+.nav { 
+	background: #303c40;
+}
+
+.nav .main-container {
+	padding: 0;
+}
+
+
+.nav__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.nav__list__item {
+	display: block;
+	padding: 1.5rem 1rem;
+	color: #dce5e8;
+}
+
+.nav__list__item:hover {
+	background: rgba(255,255,255,.05);
+	text-decoration: none;
+}
+
+
+
+
+
+/**
+ * #DEMO
+ */
+.demo {
+	border: 1px solid #f1f1f1;
+	margin: 2rem;
+	padding: 0 1rem 1rem 1rem;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.demo h1, .demo .h1, 
+.demo h2, .demo .h2, 
+.demo h3, .demo .h3, 
+.demo h4, .demo .h4, 
+.demo h5, .demo .h5, 
+.demo h6, .demo .h6 {
+	font-family: inherit;
+}
+
+.demo__title {
+	display: inline-flex;
+	margin: 0 0 0 -1rem;
+	padding: .5em;
+	font-size: .875rem;
+	text-transform: uppercase;
+	color: #838383;
+	background: #f1f1f1;
+	border: 1px solid #f1f1f1;
+	border-top: 0;
+	border-left: 0;
+}

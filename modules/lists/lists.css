@@ -1,0 +1,15 @@
+/**
+ * LISTS
+ * Styles to tame lists
+ *
+ * Minified: 44B
+ * Gzipped:  60B
+ */
+
+/**
+ * Reset list styling
+ */
+.list--clear {
+	list-style: none;
+	padding-left: 0;
+}

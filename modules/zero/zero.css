@@ -1,0 +1,32 @@
+/**
+ * ZERO
+ * Main reset and sets border-box for everything.
+ *
+ * Minified: 2217B (2.2kb)
+ * Gzipped:  993B
+ */
+
+
+
+
+
+/**
+ * #NORMALIZE
+ * Use normalize as the main reset.
+ */
+@import './../../node_modules/normalize.css/normalize.css';
+
+
+
+
+
+/**
+ * #BORDE-BOX
+ * Sets everything to border-box.
+ *
+ * Technique from 
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }

@@ -1,0 +1,166 @@
+/**
+ * GRID
+ * A simple flexbox grid implementation, as barebones as possible.
+ *
+ * Minified: 7757B (7.8k)
+ * Gzipped:  894B
+ */
+
+:root {
+	--col-padding: 1em;
+}
+
+
+
+
+
+/**
+ * #GRID ROWS
+ * The rows are simply flex containers. They are wrapping so that
+ * rows with more than 12 cols don't break.
+ */
+.row { 
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.row--al-stop     { align-items: flex-start; }
+.row--al-center   { align-items: center; }
+.row--al-bottom   { align-items: flex-end; }
+.row--al-stretch  { align-items: stretch; }
+.row--al-baseline { align-items: baseline; }
+
+
+
+
+
+/**
+ * #GRID COLUMNS
+ * The columns are flex items with fixed max-width and flex-basis. 
+ * There's also pushes and hides for each breakpoint.
+ *
+ * There are three breakpoints:
+ * 1) 0px    - col-s-n
+ * 2) 544px  – col-m-n
+ * 3) 768px  – col-l-n
+ * 4) 992px  - col-x-n
+ * 5) 1200px - col-xx-n
+ */
+
+[class^=col-] {
+	padding-left:  var(--col-padding);
+	padding-right: var(--col-padding);
+}
+
+[class^=col-]:first-child { padding-left:  0; }
+[class^=col-]:last-child  { padding-right: 0; }
+
+
+/**
+ * SMALL GRID 
+ * 0 to 543px
+ */
+@for $i from 1 to 12 {
+	.col-s-$i {
+		flex-basis: calc(100%/(12/$i));
+		max-width:  calc(100%/(12/$i));
+	}
+
+	.push-s-$i { margin-left: calc(100%/(12/$i)); }
+}
+
+.col-s-12   { padding-left: 0; padding-right: 0; }
+.push-s-0   { margin-left: 0; }
+.col-s-hide { display: none; }
+
+
+/**
+ * MEDIUM GRID
+ * 544px to 767px
+ */
+@media (min-width: 544px) {
+	@for $i from 1 to 12 {
+		.col-m-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-m-$i { margin-left: calc(100%/(12/$i)); }
+	}	
+
+	.col-m-12   { padding-left: 0; padding-right: 0; }
+	.push-m-0   { margin-left: 0; }
+	.col-m-hide { display: none; }
+}
+
+
+/**
+ * LARGE GRID
+ * 768px to 991px
+ */
+@media (min-width: 768px) {
+	@for $i from 1 to 12 {
+		.col-l-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-l-$i { margin-left: calc(100%/(12/$i)); }
+	}
+
+	.col-l-12   { padding-left: 0; padding-right: 0; }
+	.push-l-0   { margin-left: 0; }
+	.col-l-hide { display: none; }
+}
+
+
+/**
+ * EXTRA LARGE GRID
+ * 992px to 1199px
+ */
+@media (min-width: 992px) {
+	@for $i from 1 to 12 {
+		.col-x-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-x-$i { margin-left: calc(100%/(12/$i)); }
+	}
+
+	.col-x-12   { padding-left: 0; padding-right: 0; }
+	.push-x-0   { margin-left: 0; }
+	.col-x-hide { display: none; }
+}
+
+
+/**
+ * EXTRA EXTRA LARGE GRID
+ * 1200px and up
+ */
+@media (min-width: 1200px) {
+	@for $i from 1 to 12 {
+		.col-xx-$i {
+			flex-basis: calc(100%/(12/$i));
+			max-width:  calc(100%/(12/$i));
+		}
+
+		.push-xx-$i { margin-left: calc(100%/(12/$i)); }
+	}	
+
+	.col-xx-12   { padding-left: 0; padding-right: 0; }
+	.push-xx-0   { margin-left: 0; }
+	.col-xx-hide { display: none; }
+}
+
+
+
+
+
+/**
+ * #ALIGNMENT UTILITIES
+ * Helpers to aid the alignment of some elements within the grid
+ */
+
+.al-center { text-align: center; }

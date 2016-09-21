@@ -1,0 +1,112 @@
+/**
+ * TYPOGRAPHY
+ * Main typographic elements. Defines a base font size for the document,
+ * and styles headings, p, span, small, hr, and more.
+ * 
+ * Made with Typescale Calculator 
+ * http://type-scale.com/?size=16&scale=1.250
+ *
+ * Line height, font size and all else take the W3C accessibility
+ * guidelines. You can check at
+ * https://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation
+ *
+ * Minified: 581B
+ * Gzipped:  327B
+ */
+
+@import './../shared/variables.css';
+
+:root {
+	/* Typographic scale */
+	--h1: 2.4rem;
+	--h2: 2rem;
+	--h3: 1.5rem;
+	--h4: 1.25rem;
+	--h5: 1rem;
+	--h6: .8rem;
+
+	/**
+	 * Default margin and spacing
+	 * Using em instead of rem to keep it relative to the element's
+	 * font size.
+	 */
+	--margin: 1em;
+}
+
+
+
+
+
+/**
+ * #BASE FONT SIZE
+ * Make all elements inherit the font size and family from the root
+ * HTML element.
+ *
+ * Font stack approach from https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+ */
+html { 
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+
+
+/**
+ * #HEADINGS
+ * Style all the headings. They also have classes that can help
+ * change the sytling while keeping the elements semantic.
+ *
+ * You should be able to do <h1 class="h2">Something</h1> The styling
+ * is right, and also the semantic order.
+ */
+h1, .h1 { font-size: var(--h1); }
+h2, .h2 { font-size: var(--h2); }
+h3, .h3 { font-size: var(--h3); }
+h4, .h4 { font-size: var(--h4); }
+h5, .h5 { font-size: var(--h5); }
+h6, .h6 { font-size: var(--h6); }
+
+h1, .h1, 
+h2, .h2, 
+h3, .h3, 
+h4, .h4, 
+h5, .h5,
+h6, .h6 {
+	margin-top:    var(--margin);
+	margin-bottom: var(--margin);
+	line-height:   var(--line-height);
+}
+
+
+
+
+
+/**
+ * #TEXT ELEMENTS
+ * Main text elements. Just make sure they have the right settings and
+ * make it possible to keep it sematic and styled.
+ *
+ * You can have a <p class="bold">something</p>
+ */
+p, span, div, blockquote { line-height: var(--line-height); }
+
+b, .bold   { font-weight: bold; }
+i, .italic { font-style: italic; }
+
+small { font-size: .875rem; }
+
+
+
+
+
+/**
+ * Styling elements
+ */
+hr {
+	margin-top: var(--margin);
+	margin-bottom: var(--margin);
+	border: 0;
+	border-top: 1px solid #ccc;
+}
