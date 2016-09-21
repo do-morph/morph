@@ -29,13 +29,6 @@
 }
 
 /**
- * Button size variations. Change just the font size and
- * padding with ems should do the rest.
- */
-.btn--big   { font-size: 1.2rem; }
-.btn--small { font-size: .875rem; }
-
-/**
  * Block, 100% width button
  */
 .btn--block { 
