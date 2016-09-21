@@ -41,10 +41,12 @@
  * #BASE FONT SIZE
  * Make all elements inherit the font size and family from the root
  * HTML element.
+ *
+ * Font stack approach from https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
  */
 html { 
 	font-size: 16px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 
