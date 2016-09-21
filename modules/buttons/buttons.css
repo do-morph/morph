@@ -42,11 +42,3 @@
 	display: block;
 	width: 100%; 
 }
-
-/**
- * Button that looks like a link
- */
-.btn--link {
-	background-color: transparent;
-	text-decoration: underline;
-}
