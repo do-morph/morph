@@ -8,7 +8,7 @@ var minify           = require('postcss-csso');
 var postcssFor       = require('postcss-for');
 var postcssCalc      = require('postcss-calc');
 
-gulp.task('default', ['css'], function() {
+gulp.task('default', ['build'], function() {
 	gulp.watch('./modules/**/*.css', ['build']);
 });
 
