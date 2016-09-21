@@ -3,7 +3,8 @@
  * Style the main input fields. They turn into 100% blocks that cover
  * any containers they are put into.
  *
- * Estimated compiled size: 342B
+ * Minified: 284B
+ * Gzipped:  162B
  */
 
 @import './../shared/variables.css';
