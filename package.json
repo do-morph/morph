@@ -1,14 +1,14 @@
 {
-  "name": "courtesy",
+  "name": "morph-css",
   "version": "1.0.0",
-  "description": "A simple, modular and elegant CSS framework",
-  "main": "index.js",
+  "description": "A mutable and minimal framework",
+  "main": "dist/morph.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/have-courtesy/courtesy.git"
+    "url": "git+https://github.com/morph-css/morph-css.git"
   },
   "keywords": [
     "css",
@@ -19,9 +19,9 @@
   "author": "Mateus Pinheiro <mateus.pinheiro@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/have-courtesy/courtesy/issues"
+    "url": "https://github.com/morph-css/morph-css/issues"
   },
-  "homepage": "https://github.com/have-courtesy/courtesy#readme",
+  "homepage": "https://github.com/morph-css/morph-css#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "cssnext": "^1.8.4",
