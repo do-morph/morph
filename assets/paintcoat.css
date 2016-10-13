@@ -124,3 +124,13 @@ h1, h2, h3, h4, h5, h6,
 	border-top: 0;
 	border-left: 0;
 }
+
+
+
+
+/**
+ * #GRID
+ */
+.grid-item {
+	border: 1px solid #E4E4E4;
+}
